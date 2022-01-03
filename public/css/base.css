@@ -4,7 +4,7 @@ body {
     color:#fff;
 }
 
-a {
+a, a:hover {
     text-decoration:none;
     color: #fff;
 }
@@ -31,12 +31,18 @@ footer {
 .footerleft {
     color: #6B6E70;
 }
-.footerleft p {
+.footerleft a {
     padding-top:0px;
     padding-bottom:0px;
     padding-left:10px;
     padding-right:10px;
+    color: #6B6E70;
 }
+.footerleft a:hover {
+    color:#fff;
+}
+
+
 .footerright {
     text-align:right;
 }
