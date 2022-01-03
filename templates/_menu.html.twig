@@ -1,44 +1,34 @@
-<!-- Header -->
-<div id="colleft">
-    <div class="top">
-        <!-- Logo -->
-        <div id="logo">
-            <span class="image"><img src="images/logo.png" alt="" height="60px" /></span>
-            <h1 id="title">Sebastian Christoph</h1>
-            <p>geilster Typ von Welt</p>
-        </div>
+<nav class="navbar navbar-dark fixed-top navbar-expand-lg">
+    <div class="container">
+        <a class="navbar-brand" href="#">
+            <img src="{{ asset('images/logo.png') }}" width="30" height="30" class="d-inline-block align-top" alt="">
+            Sebastian Christoph
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
 
-        <!-- Nav -->
-        <nav id="nav">
-            <ul>
-                <li><a href="#">Über mich</a></li>
-                <li><a href="#">Irgendwas1</a></li>
-                <li><a href="#">Irgendwas2</a></li>
-                <li><a href="#">Kontakt</a></li>
-                <li><a href="#">Impressum</a></li>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Arbeit</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Wohnung</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Reisen</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Events</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Kontakt</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Impressum</a>
+                    </li>
             </ul>
-        </nav>
-
-    </div>
-
-    <div class="bottom">
-
-        <!-- Social Icons -->
-        <div class="row icons">
-            <a href="#" class="col-sm-2 icon email">&nbsp;</a>
-            <a href="#" class="col-sm-2 icon xing">&nbsp;</a>
-            <a href="#" class="col-sm-2 icon github">&nbsp;</a>
-            <a href="#" class="col-sm-2 icon facebook">&nbsp;</a>
-            <a href="#" class="col-sm-2 icon twitter">&nbsp;</a>
-            <a href="#" class="col-sm-2 icon instagram">&nbsp;</a>
-        </div>
-
-        <!-- Footer -->
-        <div id="footer" class="row">
-            <!-- Copyright -->
-            <div class="col-sm-12">&copy; Sebastian Christoph. All rights reserved.</div>
         </div>
     </div>
-
-</div>
-<!-- END Header -->
+</nav>
