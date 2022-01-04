@@ -30,7 +30,9 @@
     {{ include('_menu.html.twig') }}
     <div class="container bodycontainer">
         <div class="row">
-            {% block content %}{% endblock %}
+            <div class="col-md-12 maincontent">
+                {% block content %}{% endblock %}
+            </div>
         </div>
     </div>
 
@@ -38,11 +40,11 @@
     <footer class="font-small text-white">
         <div class="container">
             <div class="row">
-                <div class="col-md-6 footerleft">
-                    <a href="#" title="Impressum">Impressum</a>
+                <div class="col-md-6 col-sm-12 footerleft">
+                    <a href="{{ path('impressum') }}" title="Impressum">Impressum</a>
                     <a href="#" title="Datenschutz">Datenschutz</a>
                 </div>
-                <div class="col-md-6 footerright">
+                <div class="col-md-6 d-none d-lg-block footerright">
                     <a href="#" title="E-Mail"><img src="{{ asset('images/icons/email.png') }}" width="20" height="20" class="d-inline-block align-top" alt=""></a>
                     <a href="#" title="Xing"><img src="{{ asset('images/icons/xing.png') }}" width="20" height="20" class="d-inline-block align-top" alt=""></a>
                     <a href="#" title="Github"><img src="{{ asset('images/icons/github.png') }}" width="20" height="20" class="d-inline-block align-top" alt=""></a>
